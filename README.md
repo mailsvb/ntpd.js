@@ -3,7 +3,7 @@ flexible NTP server for testing purposes written for node.js
 
 feature list:
 
- * define linux timestamp to be sent from NTP server or let NTP server sent recent time
+ * define linux timestamp as initial reference to be sent in an NTP reply or let NTP server sent the most recent timestamp
  * define error state
  * define server version
  * define server mode
@@ -11,7 +11,7 @@ feature list:
  * define delay
  * define dispersion
 
-Example for sending specific time stamp
+Example for sending NTP replies based on an initial timestamp provided on start
 
 ```javascript
 const TimeServer = require('./ntpd.js');
